@@ -2,7 +2,7 @@ import favicon from '../assets/img/favicon.ico';
 
 export default function Header() {
   return (
-    <div className='container'>
+    <div className='header__container container' id='header'>
       <header className='header'>
         <div className='header__logo__wrapper'>
           <img className='header__logo__img' src={favicon} alt='logo' />
