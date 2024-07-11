@@ -1,0 +1,34 @@
+@import './section/header.css';
+
+:root {
+  --color-black: #222831;
+  --color-gray: #393e46;
+  --color-green: #00adb5;
+  --color-dark-white: #eeeeee;
+  --color-white: #ffffff;
+
+  --size-max-width: 1400px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--color-dark-white);
+}
