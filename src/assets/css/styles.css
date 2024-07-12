@@ -4,6 +4,7 @@
 @import './section/skill.css';
 @import './section/projects.css';
 @import './section/project.css';
+@import './section/contact.css';
 
 :root {
   --color-black: #222831;
