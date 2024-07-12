@@ -10,8 +10,8 @@ function App() {
     <>
       <Header />
       <About />
-      {/* <Skills /> */}
-      {/* <Projects /> */}
+      <Skills />
+      <Projects />
       {/* <MiniProjects/> */}
       {/* <Contact /> */}
     </>

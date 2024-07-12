@@ -1,5 +1,5 @@
 import profile from '../assets/img/profile-noBG.png';
-import '../assets/css/section/about.css';
+
 
 export default function About() {
   return (

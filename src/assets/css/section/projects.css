@@ -1,0 +1,7 @@
+.projects__container {
+  background-color: var(--color-gray);
+}
+
+#projects {
+  display: flex;
+}

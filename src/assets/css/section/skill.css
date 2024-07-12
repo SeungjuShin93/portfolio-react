@@ -1,0 +1,26 @@
+.skill {
+  position: relative;
+  background-color: var(--color-white);
+  border: 5px solid var(--color-green);
+  border-radius: 0.8rem;
+}
+
+.skill__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -3.5rem;
+  top: -3rem;
+  padding: 0.5rem 2rem;
+  border: 3px solid var(--color-white);
+  color: var(--color-green);
+  background-color: var(--color-gray);
+  font-size: 2rem;
+  transform: rotate(-15deg);
+}
+
+.skill__description {
+  padding: 2rem;
+  font-size: 1.2rem;
+}
