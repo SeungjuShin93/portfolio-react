@@ -28,11 +28,6 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a className='header__menu__item' href='#mini-projects'>
-                Mini-Projects
-              </a>
-            </li>
-            <li>
               <a className='header__menu__item' href='#contact'>
                 Contact
               </a>

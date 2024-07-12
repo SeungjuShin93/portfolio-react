@@ -4,4 +4,5 @@
 
 #projects {
   display: flex;
+  width: 300vw;
 }
