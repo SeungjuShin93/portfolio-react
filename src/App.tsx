@@ -2,6 +2,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import MiniProjects from './components/MiniProjects';
 import Contact from './components/Contact';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <MiniProjects />
       <Contact />
     </>
   );

@@ -1,11 +1,3 @@
-@import './section/header.css';
-@import './section/about.css';
-@import './section/skills.css';
-@import './section/skill.css';
-@import './section/projects.css';
-@import './section/project.css';
-@import './section/contact.css';
-
 :root {
   --color-black: #222831;
   --color-gray: #393e46;
@@ -14,15 +6,14 @@
   --color-white: #ffffff;
 
   --size-max-width: 1400px;
+  --border-radius: 4px;
 }
 
-* {
+body * {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
+body,
 h1,
 h2,
 h3,

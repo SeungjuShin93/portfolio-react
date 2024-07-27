@@ -4,12 +4,13 @@
 
 .about__container {
   background-color: var(--color-gray);
+  height: 100vh;
 }
 
 .about {
   background-image: var(--about-bg-svg);
   max-width: var(--size-max-width);
-  height: 100vh;
+
   margin: 0 auto;
   color: var(--color-dark-white);
   text-align: center;
@@ -35,7 +36,7 @@
 }
 
 .about__title {
-  font-size: 3.6em;
+  font-size: 3.6rem;
   margin-bottom: 1.2em;
 }
 
