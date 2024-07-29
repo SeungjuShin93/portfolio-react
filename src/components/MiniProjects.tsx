@@ -1,7 +1,11 @@
 import { useState } from 'react';
-import project2 from '../assets/img/project2.jpg';
 import styles from '../assets/css/section/miniProjects.module.css';
 import ProductApp from '../miniProjects/productManagement/ProductApp';
+import CameraApp from '../miniProjects/CameraApp/CameraApp';
+
+// imgs
+import imgProductManagement from '../assets/img/productManagement.png';
+import imgCamera from '../assets/img/camera.jpg';
 
 interface MiniProject {
   title: string;
@@ -10,7 +14,8 @@ interface MiniProject {
 }
 
 const miniProjects: MiniProject[] = [
-  { title: '제품 관리', img: project2, component: <ProductApp /> },
+  { title: '제품 관리', img: imgProductManagement, component: <ProductApp /> },
+  { title: '카메라 앱', img: imgCamera, component: <CameraApp /> },
 ];
 
 export default function MiniProjects() {

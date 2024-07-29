@@ -25,6 +25,12 @@
   width: 100%;
   border-radius: var(--border-radius);
   overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.mini__article:hover {
+  transform: scale(1.02);
 }
 
 .mini__title {
