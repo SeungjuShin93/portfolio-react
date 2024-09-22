@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 import styles from './styles/ProductForm.module.css';
 import { Product } from './types/product.type';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './styles/ProductList.module.css';
 import { Product } from './types/product.type';
 import ProductItem from './ProductItem';

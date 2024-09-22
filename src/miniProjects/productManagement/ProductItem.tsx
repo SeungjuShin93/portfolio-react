@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './styles/ProductItem.module.css';
 import { Product } from './types/product.type';
 import { useFocusTransition } from './useFocusTransition';
