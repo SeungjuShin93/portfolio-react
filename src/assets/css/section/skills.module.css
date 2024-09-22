@@ -1,6 +1,9 @@
 .skills__container {
   background-color: var(--color-black);
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills {
@@ -8,8 +11,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 6rem 8rem;
   max-width: var(--size-max-width);
-  margin: 0 auto;
-  padding: 10rem 1rem;
 }
 
 .skill {
@@ -36,5 +37,14 @@
 
 .skill__description {
   padding: 2rem;
-  font-size: 1.2rem;
+}
+
+.skill__description p {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.skill__description p:last-of-type {
+  margin-bottom: 0;
 }

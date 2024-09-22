@@ -26,7 +26,9 @@ export default function Projects() {
             기능, 결제 기능을 만들었으며 보다 더 자세한 내용은 아래 깃허브
             버튼을 꼭 클릭하여 주세요!!
           </p>
-          <button className={styles.project__button}>깃허브</button>
+          <button className={styles.project__button}>
+            깃허브 (현재 배포 준비 중입니다.)
+          </button>
         </div>
         <img
           src={project}
