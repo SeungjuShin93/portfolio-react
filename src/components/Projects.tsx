@@ -1,59 +1,39 @@
-import project1 from '../assets/img/project1.jpg';
+import project from '../assets/img/project.png';
 import styles from '../assets/css/section/projects.module.css';
 
 export default function Projects() {
   return (
     <div className={`container ${styles.projects__container}`} id='projects'>
-      <div className={styles.project__container}>
-        <Project />
-      </div>
-    </div>
-  );
-}
-
-function Project() {
-  return (
-    <section className={styles.project}>
-      <article className={styles.project__img__wrapper}>
+      <section className={styles.project}>
         <img
-          src={project1}
-          alt='project1 image'
+          src={project}
+          alt='project image'
           className={styles.project__img}
         />
-      </article>
-      <article className={styles.project__description__wrapper}>
         <div className={styles.project__description}>
-          <h2 className={styles.project__description__title}>
-            제이스 장난감 백화점
-          </h2>
-          <div>
-            <p className={styles.project__description__skills}>
-              리액트 + 타입스크립트
-            </p>
-            <p className={styles.project__description__skills}>
-              커스텀 훅 사용
-            </p>
-            <p className={styles.project__description__skills}>최적화를 적용</p>
-            <p className={styles.project__description__skills}>Postman 사용</p>
-            <p className={styles.project__description__skills}>
-              공공 API를 활용
-            </p>
-            <p className={styles.project__description__skills}>
-              깃허브를 이용한 협업
-            </p>
-            <p className={styles.project__description__summary}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis voluptas nisi similique id ratione deserunt. Dolores
-              ipsa neque omnis fuga facere provident, voluptates vitae atque
-              ducimus, natus aliquid, nesciunt quis.
-            </p>
-          </div>
-          <div className={styles.project__button__wrapper}>
-            <button className={styles.project__button}>데모 사이트</button>
-            <button className={styles.project__button}>깃허브</button>
-          </div>
+          <h2>제이스 장난감 백화점</h2>
+          <p>주요 스택 : React + TypeScript</p>
+          <p>
+            쇼핑몰에서 소비하는 시간을 줄이고, 사용자 경험을 향상시킬 수 있는
+            효율적인 웹사이트를 만들고 싶어서 소비자가 쉽고 빠르게 다양한
+            장난감을 찾아보고 구매할 수 있게 하자는 목적을 가지고
+            제작하였습니다.
+          </p>
+          <p>
+            요구사항 분석부터 시작하여 플로우차트를 및 와이어프레임을 구성하고
+            직접 디자인하였습니다. 기능으로는 회원가입, 로그인, 상품 검색 기능,
+            필터링 기능, 장바구니 및 찜 목록 추가, 리뷰작성, 중고상품, 회원수정
+            기능, 결제 기능을 만들었으며 보다 더 자세한 내용은 아래 깃허브
+            버튼을 꼭 클릭하여 주세요!!
+          </p>
+          <button className={styles.project__button}>깃허브</button>
         </div>
-      </article>
-    </section>
+        <img
+          src={project}
+          alt='project image'
+          className={styles.project__img}
+        />
+      </section>
+    </div>
   );
 }
