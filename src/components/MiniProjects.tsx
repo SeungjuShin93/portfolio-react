@@ -6,7 +6,7 @@ import CartApp from '../miniProjects/CartApp/CartApp';
 
 // imgs
 import imgProductManagement from '../assets/img/productManagement.png';
-import imgCamera from '../assets/img/camera.jpg';
+import imgCamera from '../assets/img/camera.png';
 import imgCart from '../assets/img/cart.jpg';
 
 interface MiniProject {
@@ -20,7 +20,7 @@ interface MiniProject {
 const miniProjects: MiniProject[] = [
   {
     title: '제품 관리',
-    img: imgProductManagement,
+    img: imgCamera,
     component: <ProductApp />,
     stack: 'React & TS',
     descriptions: [
@@ -31,7 +31,7 @@ const miniProjects: MiniProject[] = [
     ],
   },
   {
-    title: '카메라 앱',
+    title: '카메라',
     img: imgCamera,
     component: <CameraApp />,
     stack: 'React & TS',
@@ -39,7 +39,7 @@ const miniProjects: MiniProject[] = [
   },
   {
     title: '장바구니',
-    img: imgCart,
+    img: imgCamera,
     component: <CartApp />,
     stack: 'React & TS',
     descriptions: [
@@ -64,7 +64,7 @@ export default function MiniProjects() {
   };
 
   return (
-    <div className={`container ${styles.mini__container}`} id='minis'>
+    <div className={styles.mini__container} id='minis'>
       <div className={styles.mini}>
         <h1 className={styles.mini__section__title}>Mini - Projects</h1>
         <section className={styles.mini__projects__container}>
@@ -104,11 +104,9 @@ const MiniProjectCard = ({
 }: MiniProjectCardProps) => {
   return (
     <article className={styles.mini__article} onClick={onClick}>
-      <h3 className={styles.mini__title}>{title}</h3>
-      <div className={styles.mini__img__wrapper}>
-        <img src={img} alt={title} className={styles.mini__img} />
-      </div>
+      <img src={img} alt={title} className={styles.mini__img} />
       <div className={styles.mini__metadata}>
+        <h3 className={styles.mini__title}>{title}</h3>
         <h2>{stack}</h2>
         <ul>
           {descriptions.map((desc, idx) => (

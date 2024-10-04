@@ -2,7 +2,7 @@ import styles from '../assets/css/section/contact.module.css';
 
 export default function Contact() {
   return (
-    <div className={`container ${styles.contact__container}`} id='contact'>
+    <div className={styles.contact__container} id='contact'>
       <footer className={styles.contact}>
         <h2 className={styles.contact__title}>Let&#39;s talk</h2>
         <p className={styles.contact__description}>

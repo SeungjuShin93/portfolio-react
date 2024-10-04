@@ -1,19 +1,22 @@
 .skills__container {
   background-color: var(--color-black);
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .skills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 6rem 8rem;
+  margin: 0 auto;
+  padding-top: 85px;
   max-width: var(--size-max-width);
+  height: calc(100vh - 85px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .skill {
+  width: 22%;
+  height: 50%;
   position: relative;
   background-color: var(--color-white);
   border: 5px solid var(--color-green);
@@ -25,24 +28,32 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: -3.5rem;
+  left: -1rem;
   top: -3rem;
   padding: 0.5rem 2rem;
   border: 3px solid var(--color-white);
   color: var(--color-green);
   background-color: var(--color-gray);
   font-size: 2rem;
-  transform: rotate(-15deg);
+  transform: rotate(-5deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.skill:hover .skill__title {
+  transform: scale(0.99) translate(1px, -2px);
 }
 
 .skill__description {
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  word-break: keep-all;
 }
 
-.skill__description p {
+.skill__description li {
+  list-style-type: square;
   text-align: left;
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .skill__description p:last-of-type {

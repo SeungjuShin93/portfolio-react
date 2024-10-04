@@ -8,15 +8,16 @@
 }
 
 .about {
+  margin: 0 auto;
+  padding-top: 170px;
+  height: calc(100vh - 85px);
   background-image: var(--about-bg-svg);
   max-width: var(--size-max-width);
-
-  margin: 0 auto;
   color: var(--color-dark-white);
   text-align: center;
   overflow: hidden;
-  padding: 10rem 1rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -24,27 +25,24 @@
   background-image: var(--about-avatar-svg);
   position: relative;
   bottom: -2rem;
-  margin-right: 2rem;
+  margin-right: 2em;
+  margin-bottom: 6em;
   width: 36em;
   height: 36em;
   object-fit: cover;
-  transform: rotate(5deg);
+  transform: translateX(25px) rotate(5deg);
+  transition: transform 0.5s ease-in-out;
 }
 
-.about__text__box {
-  padding-top: 3rem;
+.about__avatar:hover {
+  transform: rotate(3deg) scale(0.98) translateX(20px);
 }
 
 .about__title {
   font-size: 3.6rem;
-  margin-bottom: 1.2em;
+  margin: 0.4em 0;
 }
 
-.about__title--strong {
+.about__strong {
   color: var(--color-green);
-}
-
-.about__description {
-  font-size: 1.4rem;
-  line-height: 1.8;
 }

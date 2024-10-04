@@ -1,14 +1,16 @@
 .header__container {
+  width: 100%;
   position: fixed;
   z-index: 5;
   top: 0;
   height: 85px;
   background-color: var(--color-black);
+  opacity: 0.8;
 }
 
 .header {
   max-width: var(--size-max-width);
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,6 +43,10 @@
   font-size: 1.4rem;
   padding: 0.5em 1em;
   border-bottom: 1px solid transparent;
+}
+
+li:last-of-type .header__menu__item {
+  padding-right: 0;
 }
 
 .header__menu__item:hover {

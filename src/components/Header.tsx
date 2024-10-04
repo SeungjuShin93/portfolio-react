@@ -3,7 +3,7 @@ import styles from '../assets/css/section/header.module.css';
 
 export default function Header() {
   return (
-    <div className={`${styles.header__container} container`} id='header'>
+    <div className={styles.header__container} id='header'>
       <header className={styles.header}>
         <div className={styles.header__logo__wrapper}>
           <img className={styles.header__logo__img} src={favicon} alt='logo' />
